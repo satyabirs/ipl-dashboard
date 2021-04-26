@@ -1,4 +1,4 @@
-package personal.project.ipldashboard.Repository;
+package personal.project.ipldashboard.repository;
 
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

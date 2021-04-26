@@ -1,4 +1,4 @@
-package personal.project.ipldashboard.Repository;
+package personal.project.ipldashboard.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import personal.project.ipldashboard.model.Team;
