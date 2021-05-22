@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { MatchDetailsCard } from '../components/MatchDetailsCard';
 import { MatchSmallCard } from '../components/MatchSmallCard';
 import { PieChart } from 'react-minimal-pie-chart';
@@ -44,7 +44,9 @@ export const TeamPage = () => {
         <MatchDetailsCard teamName={team.teamName} match={team.matches[0]} />
       </div>
       {team.matches.slice(1).map(match => <MatchSmallCard teamName={team.teamName} match={match} />)}
-      <div className="more-link"><a href="#">More ></a></div>
+      <div className="more-link">
+        <Link to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}>More ></Link>
+      </div>
     </div>
   );
 }
